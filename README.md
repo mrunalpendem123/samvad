@@ -28,15 +28,15 @@ Add screenshots in `./docs/` and update this section as needed.
 - Rust (latest stable)
 - Bun
 
-### Install
+### Run Locally (Full App)
+
+From the repo root, run the commands in this order:
+
+1. Install dependencies.
+2. Start the Tauri app (this also starts the Vite dev server).
 
 ```bash
 bun install
-```
-
-### Run (Tauri)
-
-```bash
 bun run tauri dev
 ```
 
