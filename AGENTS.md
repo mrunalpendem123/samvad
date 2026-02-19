@@ -29,15 +29,9 @@ bun run build      # Build frontend (TypeScript + Vite)
 bun run preview    # Preview built frontend
 ```
 
-**Model Setup (Required for Development):**
+**Model Setup:**
 
-```bash
-# Create models directory
-mkdir -p src-tauri/resources/models
-
-# Download required VAD model
-curl -o src-tauri/resources/models/silero_vad_v4.onnx https://blob.handy.computer/silero_vad_v4.onnx
-```
+No manual model downloads are required.
 
 ## Architecture Overview
 

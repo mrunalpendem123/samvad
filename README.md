@@ -34,15 +34,6 @@ Add screenshots in `./docs/` and update this section as needed.
 bun install
 ```
 
-### Model Setup (Required)
-
-Create the models directory and download the VAD model:
-
-```bash
-mkdir -p src-tauri/resources/models
-curl -o src-tauri/resources/models/silero_vad_v4.onnx https://blob.handy.computer/silero_vad_v4.onnx
-```
-
 ### Run (Tauri)
 
 ```bash
@@ -65,7 +56,7 @@ bun run dev
 
 ## Models
 
-If the VAD model already exists at `src-tauri/resources/models/silero_vad_v4.onnx`, you can skip the download step.
+No manual model downloads are required.
 
 ## Online Mode (Sarvam AI)
 
