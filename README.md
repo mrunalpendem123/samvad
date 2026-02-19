@@ -34,11 +34,28 @@ Add screenshots in `./docs/` and update this section as needed.
 bun install
 ```
 
+### Model Setup (Required)
+
+Create the models directory and download the VAD model:
+
+```bash
+mkdir -p src-tauri/resources/models
+curl -o src-tauri/resources/models/silero_vad_v4.onnx https://blob.handy.computer/silero_vad_v4.onnx
+```
+
 ### Run (Tauri)
 
 ```bash
 bun run tauri dev
 ```
+
+### First-Run Checklist
+
+- Allow microphone access when prompted.
+- macOS: grant Accessibility permission for global shortcuts.
+- Open Settings → Models and download/select a local model.
+- Default shortcut: `alt+space` (macOS) or `ctrl+space` (Windows/Linux).
+- Optional: enable Online Mode and set your Sarvam API key.
 
 ### Frontend Only
 
@@ -48,12 +65,7 @@ bun run dev
 
 ## Models
 
-Create the models directory and download the VAD model:
-
-```bash
-mkdir -p src-tauri/resources/models
-curl -o src-tauri/resources/models/silero_vad_v4.onnx https://blob.handy.computer/silero_vad_v4.onnx
-```
+If the VAD model already exists at `src-tauri/resources/models/silero_vad_v4.onnx`, you can skip the download step.
 
 ## Online Mode (Sarvam AI)
 
